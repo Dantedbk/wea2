@@ -1,0 +1,48 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+  <section class="hero features pt-1" 
+  style=" color:white; min-height: 500px;border-radius: 10px;
+  border:10px black solid">
+    <div class="container pt-3" >
+      <h1 class="registerButton">Bienvenido a MusicPro</h1>
+      <p>frase inspiradora acá .</p>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+            <div class="phrase-of-the-day">
+                <h2 class="registerButton" style="font-size: 40px;">Hero of the Day:</h2>
+                <p2>{{ selected_phrase.quote }}</p2>
+                <p2>- {{ selected_phrase.author }}</p2>
+            </div>
+            
+        </div>
+        <div class="col-md-4 pt-5" >
+          <i class="fas fa-headset"></i>
+          <a href="{% url 'store' %}" class="btn btn-primary" style="
+          background-image: url('../../static/images/casette.png'); 
+          background-size: cover; background-repeat: no-repeat; width: 200px; height: 200px;
+          background-color: rgba(250, 235, 215, 0);
+          border-color: rgba(255, 228, 196, 0);
+          outline: none;
+          "><span style="font-weight:900;font-size:25px">Ver la tienda</span></a>
+
+        </div>
+        <div class="col-md-4">
+          <h1 class="registerButton">e_es</h1>
+          <h3>tal coosa 123</h3>
+          <p>50% de descuento, se quebró.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+{% endblock %}
