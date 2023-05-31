@@ -8,6 +8,7 @@ from .utils import cookieCart, cartData, guestOrder
 from pathlib import Path
 from django.shortcuts import render
 import locale
+
 locale.setlocale(locale.LC_ALL, 'es_CL.UTF-8')
 def store(request):
     data = cartData(request)
